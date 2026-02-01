@@ -1,6 +1,6 @@
 streamlit
-langchain
-langchain-core
+langchain>=0.1.20
+langchain-core>=0.1.52
 langchain-pinecone
 pinecone-client
 langchain-upstage
