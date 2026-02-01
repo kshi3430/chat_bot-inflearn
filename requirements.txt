@@ -4,3 +4,4 @@ langchain-core
 langchain-pinecone
 pinecone-client
 langchain-upstage
+python-dotenv
