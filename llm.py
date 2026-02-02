@@ -70,16 +70,10 @@ def get_retriever():
 
 
 
-def get_llm():
-    model_name = "gpt-3.5-upstage"  # 실제 사용 가능한 모델 이름
-    api_key = os.getenv("UPSTAGE_API_KEY")
-
-    # ChatUpstage 생성 시 필수값만 넣음
-    llm = ChatUpstage(
-        model=model_name,
-        api_key=api_key
-    )
+def get_llm(model="solar-1-mini-chat"):
+    llm = ChatUpstage(model=model)
     return llm
+
 
 
 def get_rag_chain():
